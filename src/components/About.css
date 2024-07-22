@@ -1,0 +1,128 @@
+/* src/components/About.css */
+.about {
+    background-color: #FFFFFF; /* White background */
+    color: #000000; /* Text color */
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* Apply SF Pro Display font */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin: 50px auto;
+    max-width: 900px; /* Constrain width */
+    padding: 20px;
+    position: relative;
+}
+
+.header {
+    text-align: left;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    font-weight: normal; /* Remove boldness */
+    margin: 0;
+    color: #000000; /* Text color */
+}
+
+.header::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #000000; /* Thinner horizontal line */
+    width: 100%;
+    margin: 10px 0; /* Space between header and line */
+}
+
+.content {
+    display: flex;
+    align-items: flex-start; /* Align to the top */
+    margin-top: 20px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    align-items: center; /* Center items horizontally */
+    flex: 1;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 10px; /* Add some spacing between the name and the picture */
+}
+
+.name {
+    font-size: 2em;
+    font-weight: 300;
+    color: #000000; /* Text color */
+    margin-bottom: 10px; /* Add some spacing below the name */
+}
+
+.divider {
+    width: 1px;
+    background-color: #000000; /* Divider color */
+    height: 200px; /* Adjust height as needed */
+    margin: 0 20px;
+}
+
+.stats {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.stats ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stats li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #000000; /* Text color */
+    font-weight: 200;
+}
+
+.label {
+    font-weight: 300;
+    color: #ca0d2c; /* NBA red */
+}
+
+/* New styles for analysis section */
+.analysis {
+    margin-top: 50px;
+}
+
+.analysis-box {
+    background-color: #f0f0f0; /* Light gray background for the analysis box */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.analysis h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #000000; /* Dark color for the section title */
+}
+
+.analysis-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.analysis-item {
+    margin-bottom: 20px;
+}
+
+.analysis-item h3 {
+    font-size: 1.5em;
+    color: #ca0d2c; /* NBA red */
+}
+
+.analysis-item p {
+    font-size: 1.2em;
+    color: #000000; /* Text color */
+    font-weight: 200; /* Light font weight */
+}
