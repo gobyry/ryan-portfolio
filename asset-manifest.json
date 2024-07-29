@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/gobyry.github.io/ryan-portfolio/static/css/main.d20f7361.css",
+    "main.js": "/gobyry.github.io/ryan-portfolio/static/js/main.44ac509c.js",
+    "static/js/453.c99653aa.chunk.js": "/gobyry.github.io/ryan-portfolio/static/js/453.c99653aa.chunk.js",
+    "static/media/bird.jpeg": "/gobyry.github.io/ryan-portfolio/static/media/bird.020377b14c28481fecc6.jpeg",
+    "static/media/budget.jpeg": "/gobyry.github.io/ryan-portfolio/static/media/budget.19ef169086ccdccb1b8a.jpeg",
+    "static/media/server.jpeg": "/gobyry.github.io/ryan-portfolio/static/media/server.168ebbabe27c80b9c6d0.jpeg",
+    "static/media/goldenhours.jpeg": "/gobyry.github.io/ryan-portfolio/static/media/goldenhours.c55bce61c6d59ff1b377.jpeg",
+    "static/media/nlp.jpeg": "/gobyry.github.io/ryan-portfolio/static/media/nlp.b771fbd4f25d969407cd.jpeg",
+    "static/media/filesorter.jpeg": "/gobyry.github.io/ryan-portfolio/static/media/filesorter.846070dfcf47f4140c05.jpeg",
+    "static/media/pacman.jpeg": "/gobyry.github.io/ryan-portfolio/static/media/pacman.6f4e09bfc6bd73dbd75d.jpeg",
+    "static/media/skyit.png": "/gobyry.github.io/ryan-portfolio/static/media/skyit.7a02b62d82d09a8a85e5.png",
+    "static/media/chatbot.jpeg": "/gobyry.github.io/ryan-portfolio/static/media/chatbot.b0ea3974f65fe3f29b65.jpeg",
+    "static/media/pfp.JPG": "/gobyry.github.io/ryan-portfolio/static/media/pfp.85cf211e98db76b6acf1.JPG",
+    "static/media/classhook.png": "/gobyry.github.io/ryan-portfolio/static/media/classhook.c01526da72107affc366.png",
+    "index.html": "/gobyry.github.io/ryan-portfolio/index.html",
+    "main.d20f7361.css.map": "/gobyry.github.io/ryan-portfolio/static/css/main.d20f7361.css.map",
+    "main.44ac509c.js.map": "/gobyry.github.io/ryan-portfolio/static/js/main.44ac509c.js.map",
+    "453.c99653aa.chunk.js.map": "/gobyry.github.io/ryan-portfolio/static/js/453.c99653aa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d20f7361.css",
+    "static/js/main.44ac509c.js"
+  ]
+}
