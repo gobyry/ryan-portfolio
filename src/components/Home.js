@@ -1,14 +1,19 @@
-// src/components/Home.js
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.css';
 
 const Home = () => {
+    const [isTyping, setIsTyping] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => setIsTyping(true), 500); // Delay typing effect
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
-        <div className="home">
-            <p className="small">Hi, I'm</p>
-            <p className="name">Ryan Hui</p>
-            <p className="large">Declaring for the 2024-25 SWE Draft</p>
-        </div>
+        <section id="home" className="home-container">
+            <div className="intro-text">Hello, I'm</div>
+            <div className={`typing-text ${isTyping ? 'typing' : ''}`}>Ryan Hui </div>
+        </section>
     );
 };
 

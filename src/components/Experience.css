@@ -1,0 +1,128 @@
+/* Experience section styling */
+.experience-section {
+    background-color: #f5f5f6; /* Background color for the section */
+    padding: 40px; /* Padding around the section */
+    margin-bottom: 20px; /* Space around the section */
+    margin-top: -20px;
+}
+
+/* Timeline container styling */
+.timeline-container {
+    width: 90%; /* Increased width to be closer to the edge */
+    max-width: 1200px; /* Optional: max-width to prevent excessive stretching */
+    margin: 0 auto; /* Center the container horizontally */
+    position: relative; /* Position relative to place the timeline line */
+    display: flex;
+    flex-direction: column;
+    gap: 80px; /* Space between timeline items */
+}
+
+/* Vertical timeline line */
+.timeline-line {
+    position: absolute;
+    left: 20%; /* Center the line */
+    top: 0;
+    bottom: 0;
+    width: 4px; /* Line thickness */
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Gradient background */
+    z-index: 0; /* Place behind the content */
+}
+
+/* Timeline item container */
+.timeline-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between icon and content */
+    padding-left: 60px; /* Adjust if necessary to ensure space for the icon */
+    padding-right: 60px; /* Adjust if necessary for content */
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    transform: scale(1);
+    opacity: 1;
+    transform: translateY(0);
+    justify-content: flex-start; /* Align items at the start */
+}
+
+.card-icon-container {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for transform and box-shadow */
+}
+
+/* Floating content containers */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    padding-left: 140px; /* Adjusted to create space next to the icon container */
+}
+
+/* Card icon styling */
+.card-icon-container img {
+    width: 80px; /* Size of the icon */
+    height: 80px;
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Square content box */
+.content-box {
+    background-color: #ffffff; /* White background */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+    transition: transform 0.6s ease; /* Smooth transition */
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Final position */
+}
+
+/* Styling for h2 elements within content boxes */
+.card-content .content-box h2 {
+    font-weight: 200; /* Lighter font weight */
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Gradient background */
+    -webkit-background-clip: text; /* Clip background to text */
+    color: transparent; /* Make text color transparent to show gradient */
+}
+
+/* Separate boxes */
+.card-content .content-box + .content-box {
+    margin-top: 20px; /* Space between content boxes */
+}
+
+/* Hover effect for content boxes */
+.card-content .content-box:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Hover effect for icon */
+.card-icon-container:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* General rule to set font weight for all text within the experience section */
+.experience-section * {
+    font-weight: 200;
+}
+
+.experience-title {
+    text-align: left;
+    margin-left: 275px; /* Adjust as needed */
+    font-size: 1.5rem; /* Adjust as needed */
+    font-weight: bold;
+    margin-bottom: 20px; /* Space between title and timeline */
+    font-weight: 200;
+}
+
+.year {
+    margin-right: auto; /* Pushes the year to the right */
+    font-weight: 200; /* Optional: Makes the year bold */
+}

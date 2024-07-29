@@ -1,7 +1,6 @@
 /* src/components/Footer.css */
 .footer {
-    background-color: #1d448b; /* NBA blue */
-    color: #FFFFFF; /* White text */
+    color: #0000; /* White text */
     padding: 20px 0;
     text-align: center;
     font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* Apply SF Pro Display font */

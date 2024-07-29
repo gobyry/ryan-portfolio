@@ -1,74 +1,77 @@
-/* src/components/About.css */
-.about {
-    background-color: #FFFFFF; /* White background */
-    color: #000000; /* Text color */
-    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* Apply SF Pro Display font */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-    margin: 50px auto;
-    max-width: 900px; /* Constrain width */
-    padding: 20px;
-    position: relative;
+/* About section styling */
+#about {
+    background-color: #f5f5f6; /* Background color for the section */
+    padding: 40px; /* Padding around the section */
+    margin: 10px 0; /* Space around the section */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
-.header {
-    text-align: left;
-    position: relative;
+/* About container styling */
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Split into two equal columns */
+    gap: 20px; /* Thinner space between columns */
+    max-width: 1200px; /* Increased max width for the container */
+    margin: 0 auto; /* Center container horizontally */
+    box-sizing: border-box; /* Include padding in width calculation */
+    justify-items: center; /* Center items horizontally within the grid */
+    align-items: center; /* Center items vertically within the grid */
 }
 
-.header h1 {
-    font-size: 2.5em;
-    font-weight: normal; /* Remove boldness */
-    margin: 0;
-    color: #000000; /* Text color */
-}
-
-.header::after {
-    content: "";
-    display: block;
-    border-bottom: 1px solid #000000; /* Thinner horizontal line */
-    width: 100%;
-    margin: 10px 0; /* Space between header and line */
-}
-
-.content {
+/* Image container styling */
+.image-container {
     display: flex;
-    align-items: flex-start; /* Align to the top */
-    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* White background for the image box */
+    border-radius: 12px; /* Rounded corners for the image box */
+    padding: 30px; /* Increased padding inside the image box */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow for more depth */
+    max-width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    width: 100%; /* Ensure full width */
+    height: auto; /* Adjust height to content */
+    transition: transform 0.3s ease; /* Smooth enlarge on hover */
 }
 
-.profile {
-    display: flex;
-    flex-direction: column; /* Change to column layout */
-    align-items: center; /* Center items horizontally */
-    flex: 1;
+.image-container:hover {
+    transform: scale(1.05); /* Enlarge slightly on hover */
 }
 
+/* Image styling */
 .profile-pic {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-top: 10px; /* Add some spacing between the name and the picture */
+    border-radius: 12px; /* Rounded corners for the image */
+    width: auto;
+    max-height: 600px; /* Increased max height for the image */
+    object-fit: cover; /* Cover the entire area without distorting the aspect ratio */
 }
 
-.name {
-    font-size: 2em;
-    font-weight: 300;
-    color: #000000; /* Text color */
-    margin-bottom: 10px; /* Add some spacing below the name */
+/* Info container styling */
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure balanced spacing between elements */
+    background-color: #ffffff; /* White background for the info box */
+    border-radius: 12px; /* Rounded corners for the info box */
+    padding: 40px; /* Balanced padding inside the info box */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow for more depth */
+    max-width: 100%; /* Ensure full width */
+    height: 100%; /* Ensure full height */
+    box-sizing: border-box; /* Include padding in width calculation */
+    width: 100%; /* Ensure full width */
+    transition: transform 0.3s ease; /* Smooth enlarge on hover */
 }
 
-.divider {
-    width: 1px;
-    background-color: #000000; /* Divider color */
-    height: 200px; /* Adjust height as needed */
-    margin: 0 20px;
+.info-container:hover {
+    transform: scale(1.05); /* Enlarge slightly on hover */
 }
 
+/* Stats styling */
 .stats {
-    flex: 1;
-    padding-left: 20px;
+    flex-grow: 1; /* Allow the stats to grow and fill the available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the stats vertically */
 }
 
 .stats ul {
@@ -78,51 +81,36 @@
 }
 
 .stats li {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: #000000; /* Text color */
+    display: flex;
+    justify-content: space-between; /* Distribute label and value evenly */
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0; /* Light bottom border for each stat */
+    opacity: 0;
+    animation: type 0.5s forwards; /* Typing effect */
+    animation-delay: calc(var(--order) * 0.5s); /* Delay typing */
+}
+
+.stats .label {
+    font-weight: 250; /* Bold labels */
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Gradient background */
+    -webkit-background-clip: text; /* Clip background to text */
+    color: transparent; /* Make text color transparent to show gradient */
+}
+
+.stats .value {
+    color: #000; /* Black color for values */
     font-weight: 200;
 }
 
-.label {
-    font-weight: 300;
-    color: #ca0d2c; /* NBA red */
-}
-
-/* New styles for analysis section */
-.analysis {
-    margin-top: 50px;
-}
-
-.analysis-box {
-    background-color: #f0f0f0; /* Light gray background for the analysis box */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-}
-
-.analysis h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #000000; /* Dark color for the section title */
-}
-
-.analysis-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.analysis-item {
-    margin-bottom: 20px;
-}
-
-.analysis-item h3 {
-    font-size: 1.5em;
-    color: #ca0d2c; /* NBA red */
-}
-
-.analysis-item p {
-    font-size: 1.2em;
-    color: #000000; /* Text color */
-    font-weight: 200; /* Light font weight */
+/* Typing effect keyframes */
+@keyframes type {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
