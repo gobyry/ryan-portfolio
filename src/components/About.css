@@ -8,62 +8,59 @@
 
 /* About container styling */
 .about-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Split into two equal columns */
-    gap: 20px; /* Thinner space between columns */
-    max-width: 1200px; /* Increased max width for the container */
+    display: flex; /* Use Flexbox for side-by-side layout */
+    gap: 20px; /* Space between the items */
+    max-width: 1000px; /* Decreased max width for the container */
     margin: 0 auto; /* Center container horizontally */
     box-sizing: border-box; /* Include padding in width calculation */
-    justify-items: center; /* Center items horizontally within the grid */
-    align-items: center; /* Center items vertically within the grid */
+    justify-content: center; /* Center items horizontally within the grid */
+}
+
+/* Flex item settings */
+.image-container,
+.info-container {
+    flex: 1; /* Flex grow and basis set to 1, allowing both containers to grow equally */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Space between content for balanced height */
+    background-color: #ffffff; /* White background for the box */
+    border-radius: 12px; /* Rounded corners for the box */
+    padding: 30px; /* Increased padding inside the box */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow for more depth */
+    max-width: 45%; /* Set max-width to ensure boxes are smaller */
+    box-sizing: border-box; /* Include padding in width calculation */
+    transition: transform 0.3s ease; /* Smooth enlarge on hover */
+    min-height: 550px; /* Increased minimum height for the boxes */
+}
+
+/* Enlarge on hover */
+.image-container:hover,
+.info-container:hover {
+    transform: scale(1.05); /* Enlarge slightly on hover */
 }
 
 /* Image container styling */
 .image-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff; /* White background for the image box */
-    border-radius: 12px; /* Rounded corners for the image box */
-    padding: 30px; /* Increased padding inside the image box */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow for more depth */
-    max-width: 100%; /* Ensure full width */
-    box-sizing: border-box; /* Include padding in width calculation */
-    width: 100%; /* Ensure full width */
-    height: auto; /* Adjust height to content */
-    transition: transform 0.3s ease; /* Smooth enlarge on hover */
-}
-
-.image-container:hover {
-    transform: scale(1.05); /* Enlarge slightly on hover */
+    flex-direction: column;
+    justify-content: center; /* Center image vertically */
+    align-items: center; /* Center image horizontally */
+    overflow: hidden; /* Ensure content does not overflow */
 }
 
 /* Image styling */
 .profile-pic {
-    border-radius: 12px; /* Rounded corners for the image */
-    width: auto;
-    max-height: 600px; /* Increased max height for the image */
-    object-fit: cover; /* Cover the entire area without distorting the aspect ratio */
+    width: 100%; /* Ensure the image takes the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container without distortion */
+    max-height: 555px; /* Increased max height for the image */
 }
 
 /* Info container styling */
 .info-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Ensure balanced spacing between elements */
-    background-color: #ffffff; /* White background for the info box */
-    border-radius: 12px; /* Rounded corners for the info box */
-    padding: 40px; /* Balanced padding inside the info box */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow for more depth */
-    max-width: 100%; /* Ensure full width */
-    height: 100%; /* Ensure full height */
-    box-sizing: border-box; /* Include padding in width calculation */
-    width: 100%; /* Ensure full width */
-    transition: transform 0.3s ease; /* Smooth enlarge on hover */
-}
-
-.info-container:hover {
-    transform: scale(1.05); /* Enlarge slightly on hover */
+    justify-content: space-between; /* Space between content for balanced height */
 }
 
 /* Stats styling */

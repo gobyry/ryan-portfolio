@@ -9,6 +9,9 @@
     font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* Apply SF Pro Display font */
     transition: transform 0.3s ease-in-out; /* Smooth transition for navbar visibility */
     transform: translateY(0); /* Default: visible */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
 }
 
 /* Navbar hidden state */
@@ -20,14 +23,14 @@
 .navbar-menu {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the menu items horizontally */
     margin: 0;
     padding: 0;
 }
 
 /* Navbar item styling */
 .navbar-item {
-    margin: 0 15px;
+    margin: 0 15px; /* Space between items */
 }
 
 /* Navbar link styling */
@@ -39,6 +42,9 @@
     transition: color 0.3s, background-color 0.3s; /* Smooth transition for text color and background color */
     padding: 10px;
     border-radius: 5px; /* Rounded corners for hover effect */
+    display: inline-flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
 }
 
 /* Navbar link hover styling */

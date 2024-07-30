@@ -28,7 +28,7 @@ const Navbar = () => {
                 let offset;
                 switch(targetId) {
                     case 'about':
-                        offset = -10; // Adjust the offset for About section
+                        offset = 10; // Adjust the offset for About section
                         break;
                     case 'experience':
                         offset = 150; // Adjust the offset for Skills section

@@ -15,7 +15,7 @@
     padding: 40px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
     display: flex;
-    width: 80%; /* Width of the container */
+    width: 100%; /* Full width */
     max-width: 1200px; /* Max width of the container */
     transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
@@ -25,6 +25,13 @@
     transform: scale(1.05); /* Enlarge on hover */
 }
 
+/* Container for skills and overall badge */
+.skills-content {
+    display: flex;
+    flex: 1; /* Allow to grow and fill available space */
+}
+
+/* Skills container styling */
 .skills-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Creates two columns */
@@ -32,13 +39,12 @@
     flex: 3; /* Allows the container to grow */
 }
 
-/* Adjusted Right side for overall badge to position it more to the right */
+/* Adjusted Right side for overall badge */
 .overall-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1; /* Ensure it takes less space than the skills container */
-    align-items: center; /* Center vertically */
 }
 
 /* Overall badge styling */
@@ -85,19 +91,6 @@
 }
 
 /* Define the gradient animation */
-@keyframes gradientAnimation {
-    0% {
-        stop-color: #6a11cb;
-    }
-    50% {
-        stop-color: #2575fc;
-    }
-    100% {
-        stop-color: #6a11cb;
-    }
-}
-
-/* Gradient animation */
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 0%;
@@ -156,7 +149,7 @@
     position: relative;
     background-color: #f0f0f0; /* Background color for the skill bar */
     height: 20px; /* Height of the skill bar */
-    width: calc(100% - 80px); /* Adjust width to leave enough space for the number */
+    width: calc(100% - 120px); /* Adjust width to leave enough space for the label */
     border-radius: 10px; /* Rounded corners */
     overflow: hidden; /* Ensures the gradient doesn't spill outside the bar */
     margin-right: 10px; /* Add margin to separate from the number */
@@ -189,4 +182,3 @@
     opacity: 0; /* Make the percentage invisible by default */
     transition: opacity 0.5s ease; /* Smooth transition for opacity change */
 }
-
