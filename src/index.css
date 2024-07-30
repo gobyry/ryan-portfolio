@@ -1,13 +1,66 @@
+/* Global Styles */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Responsive Styles */
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px; /* Adjust base font size for mobile */
+  }
+
+  /* Example for a header */
+  .header {
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Example for a container */
+  .container {
+    padding: 15px;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 16px; /* Slightly larger font for tablets */
+  }
+
+  .header {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+  body {
+    font-size: 18px; /* Larger font for desktops */
+  }
+
+  .header {
+    padding: 20px;
+    text-align: left;
+  }
+
+  .container {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container on larger screens */
+  }
 }
