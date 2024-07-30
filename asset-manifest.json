@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ryan-portfolio/static/css/main.d20f7361.css",
+    "main.css": "/ryan-portfolio/static/css/main.b90bce0a.css",
     "main.js": "/ryan-portfolio/static/js/main.e0353e4d.js",
     "static/js/453.c99653aa.chunk.js": "/ryan-portfolio/static/js/453.c99653aa.chunk.js",
     "static/media/bird.jpeg": "/ryan-portfolio/static/media/bird.020377b14c28481fecc6.jpeg",
@@ -15,12 +15,12 @@
     "static/media/pfp.JPG": "/ryan-portfolio/static/media/pfp.85cf211e98db76b6acf1.JPG",
     "static/media/classhook.png": "/ryan-portfolio/static/media/classhook.c01526da72107affc366.png",
     "index.html": "/ryan-portfolio/index.html",
-    "main.d20f7361.css.map": "/ryan-portfolio/static/css/main.d20f7361.css.map",
+    "main.b90bce0a.css.map": "/ryan-portfolio/static/css/main.b90bce0a.css.map",
     "main.e0353e4d.js.map": "/ryan-portfolio/static/js/main.e0353e4d.js.map",
     "453.c99653aa.chunk.js.map": "/ryan-portfolio/static/js/453.c99653aa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d20f7361.css",
+    "static/css/main.b90bce0a.css",
     "static/js/main.e0353e4d.js"
   ]
 }
