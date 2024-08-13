@@ -1,4 +1,6 @@
 import React from 'react';
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
 import './Projects.css'; // Import the stylesheet
 
 // Import images
@@ -23,24 +25,12 @@ const ProjectCarousel = () => {
         { title: "File Sorter", content: "Automated file folder sorter program.", image: filesorter }
     ];
 
-    // Duplicate the slides for infinite looping
-    const extendedSlides = [
-        ...slides,
-        ...slides,
-        ...slides, // Repeat slides multiple times for smoother infinite scrolling
-        ...slides,
-        ...slides,
-        ...slides,
-        ...slides,
-    ];
-
     return (
         <div className="carousel-container">
-            <div className="carousel-wrapper">
-                {extendedSlides.map((slide, index) => (
-                    <div key={index} className="carousel-slide">
-                        <div className="carousel-slide-content">
-                            <img src={slide.image} alt={slide.title} className="slide-image" />
+            <Slide>
+                {slides.map((slide, index) => (
+                    <div key={index} className="each-slide-effect">
+                        <div style={{ backgroundImage: `url(${slide.image})` }}>
                             <div className="slide-overlay">
                                 <h2 className="slide-title">{slide.title}</h2>
                                 <p className="slide-content">{slide.content}</p>
@@ -48,7 +38,7 @@ const ProjectCarousel = () => {
                         </div>
                     </div>
                 ))}
-            </div>
+            </Slide>
         </div>
     );
 };
