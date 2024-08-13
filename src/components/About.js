@@ -15,7 +15,7 @@ const About = () => {
                         <ul>
                             <li style={{ '--order': 1 }}><span className="label">Position:</span> <span className="value">Software Engineer</span></li>
                             <li style={{ '--order': 2 }}><span className="label">School:</span> <span className="value">University of California, Santa Cruz</span></li>
-                            <li style={{ '--order': 3 }}><span className="label">Graduation Year:</span> <span className="value">2024</span></li>
+                            <li style={{ '--order': 3 }}><span className="label">Graduation Year:</span> <span className="value">December 2024</span></li>
                             <li style={{ '--order': 4 }}><span className="label">Major:</span> <span className="value">Computer Science (B.S.)</span></li>
                             <li style={{ '--order': 5 }}><span className="label">GPA:</span> <span className="value">3.50</span></li>
                             <li style={{ '--order': 6 }}><span className="label">Location:</span> <span className="value">San Francisco</span></li>
