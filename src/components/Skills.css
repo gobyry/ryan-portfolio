@@ -2,7 +2,7 @@
 .skills-section {
     background-color: #f5f5f6; /* Background color for the section */
     padding: 40px; /* Padding around the section */
-    margin: 0px 0; /* Reduce space around the section */
+    margin: 75px 0; /* Reduce space around the section */
     display: flex;
     justify-content: center;
     align-items: flex-start;

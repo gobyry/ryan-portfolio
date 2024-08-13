@@ -37,7 +37,7 @@ const Navbar = () => {
                         offset = 75; // Adjust the offset for Projects section
                         break;
                     case 'skills':
-                        offset = 220; // Adjust the offset for Skills section
+                        offset = 100; // Adjust the offset for Skills section
                         break;
                     default:
                         offset = 100; // Default offset for other sections

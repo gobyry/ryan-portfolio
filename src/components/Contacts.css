@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center; /* Center icons horizontally */
     gap: 20px; /* Space between icons */
-    margin-top: 120px; /* Space above the icons */
+    margin-top: -50px; /* Space above the icons */
     margin-bottom: 20px; /* Space below the icons */
 }
 
